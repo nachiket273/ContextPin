@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ContextPin",
+  "version": "0.0.1",
+  "description": "Ask contextual questions about anything you read.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
